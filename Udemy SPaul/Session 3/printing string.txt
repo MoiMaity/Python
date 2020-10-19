@@ -1,0 +1,29 @@
+HOW TO PRINT STRING INTO THE CONSOLE
+
+Line-1
+print('Hello','This is nice!!',10,3.5)
+
+Output
+Hello This is nice 10 3.5
+
+Line-2
+print('Hello','This is nice!!',10,3.5,sep='*')
+
+Output
+Hello*This is nice!!*10*3.5
+
+Line-3
+print('Hello','This is nice!!',10,3.5,sep='*',end='$')
+print('This is going to be in second line')
+
+Output
+Hello*This is nice!!*10*3.5$
+
+Line-4
+print('Hello','This is nice!!',10,3.5,sep='*')
+print('This is going to be in second line')
+
+Output
+Hello*This is nice!!*10*3.5
+This is going to be in second line
+

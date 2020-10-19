@@ -1,0 +1,6 @@
+s = input('Enter your name: ')
+print(type(s))
+print('Welcome, ', s)
+str_age = input ('Enter your age: ')
+age = int(str_age)
+print(type(str_age), type(age), 'Your age: ', age)

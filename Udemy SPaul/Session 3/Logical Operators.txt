@@ -1,0 +1,22 @@
+LOGICAL OPERATORS IN PYTHON
+
+# These also returns BOOL values
+# (All are alphabetical keywords.)
+
+1. Logical AND :   and
+
+Table:
+F	F	F
+F	T	F
+T	F	F
+T	T	T
+
+2. Logical OR :   or
+
+Table:
+F	F	F
+F	T	T
+T	F	T
+T	T	T
+
+3. Logical NOT :  not

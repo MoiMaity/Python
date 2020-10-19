@@ -1,0 +1,25 @@
+VARIABLES ARE JUST REFERENCES
+These are just references to some objects which they are allocated in.
+
+>>>x=10
+>>>type(x)
+<class 'int'>
+>>>id(x)
+1404536732
+>>>y=12
+>>>id(y)
+1405327728
+>>>y=10
+>>>id(y)		#y also takes the same object which x points to
+1404536732
+>>>x=x+1
+>>>id(x)
+1404536789
+>>>print(x)
+11
+>>>x=4.5
+>>>type(x)
+<class 'float'>
+>>>s1="Hello"
+>>>type(s1)
+<class 'str'>

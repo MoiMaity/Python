@@ -1,0 +1,30 @@
+ARITHMETIC OPERATORS IN PYTHON
+
+All operators are binary operators.
+
+1. Exponent:  **	(right to left associative)
+Example: 2**3**4  is same as (2to the power(3to the power4)).
+
+2. Multiplication : *	   (left to right associative)
+
+3. Normal Division: /	(gives an actual real value)    (left to right associative)
+
+4. Floor Division:  //	(Largest integer just greater than the answer)   (left to right associative)
+Example:  10//-3=-4	# floor value of the answer
+
+5. Modulus:  %    	(left to right associative)
+
+6. Addition:   +	(left to right associative)
+
+7. Subtraction:  -	(left to right associative)
+
+
+PRECEDENCE OF OPERATORS
+
+1.    **
+
+2.    *,  //,  /,  %
+
+3.    +, -
+
+Operators having same precedence have same numbering.

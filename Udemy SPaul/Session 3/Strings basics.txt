@@ -1,0 +1,54 @@
+STRINGS ARE EVERYWHERE
+
+EXAMPLE 1
+
+>>>s1='Hello'
+>>>s1='This is Ela's Birthday!!'
+>>>print(s1)
+This is Ela's birthday!!
+>>>len(s1)		# keyword for Length of string s1
+24	
+>>>p1='50'
+>>>type(p1)
+<class 'str'>
+>>>x=int(p1)		# converting string to integer
+>>>type(x)
+<class 'int'>
+>>>print(x)
+50
+>>>s2='5.5'
+>>>type(s2)
+<class 'str'>
+>>>f=float(s2)
+>>>type(f)
+<class 'float'>
+
+EXAMPLE 2
+
+>>>s3='5'
+>>>x=float(s3)		# string to float conversion
+>>>print(x)
+5.0
+>>>x='Hello'
+>>>y='World'
+>>>z=x+', '+y		# adding two string by + operator
+>>>print(z)
+Hello, World
+
+EXAMPLE 3
+
+>>>s1='   abccba  '		# 1st white space is 3 spaces and 2nd space is 2 spaces
+>>>len(s1)
+11			# including spaces
+>>>s1=s1.strip()		# "strip" function is used to take length without spaces
+>>>len(s1)
+6
+>>>s1='   abccba  '
+>>>s1=s1.lstrip()		# "lstrip" function leaves all space in left
+>>>print(s1)
+abccba  			# there is 2 space in right
+>>>len(s1)
+8
+>>>s1=s1.rstrip()		# "rstrip" function leaves all space in right
+>>>len(s1)
+6

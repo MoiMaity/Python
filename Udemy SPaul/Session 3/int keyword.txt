@@ -1,0 +1,13 @@
+USING "INT" IN VARIOUS FORMS
+
+>>>s1='1100'
+>>>x=int(s1,2)		# here 2 represents base 2 of the binary number system
+>>>print(x)
+12			# equivalent decimal number of 1100
+>>>s1='1234'
+>>>x=int(s1,2)
+Traceback Error 		# we get traceback error as 2,3,4 don't represent binary
+>>>s1='1A'
+>>>x=int(s1,16)		# 16 represents Hex
+>>>print(x)
+26

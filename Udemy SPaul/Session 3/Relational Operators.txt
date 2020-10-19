@@ -1,0 +1,17 @@
+RELATIONAL OPERATORS IN PYTHON
+
+#  All are binary operators
+
+# All returns "True" or "False" as output i.e. BOOL type
+
+1. Greater Than  :   >
+
+2. Less Than  :  <
+
+3. Greater than equals  :  >=
+
+4. Less than equals  :  <=
+
+5. Equality testing  :  ==
+
+6. Not equality testing  :  !=
