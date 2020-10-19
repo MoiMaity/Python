@@ -1,0 +1,13 @@
+ELSE WITH LOOP
+
+If we have "break" statement in any loop, the the loop exit the iteration and come out of loop, the "else" will not work
+
+ELSE will work only if the loop has iterated fully.
+
+Example:
+
+for i in 'Hello World':
+    print(i)
+else:
+    print("this is else")
+

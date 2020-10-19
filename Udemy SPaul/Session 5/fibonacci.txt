@@ -1,0 +1,22 @@
+FIBONACCI SEQUENCE
+
+1. Printing
+
+a,b=0,1
+for i in range(10):
+    print(a,end=' ')
+    a,b=b,a+b
+
+This will print first 10 terms of Fibonacci sequence
+
+2. Average of n Fibonacci numbers
+
+n=int(input("enter a range"))
+sum=0
+i=1
+a,b=1,1		# start like 1,1,2,3,...
+while i<=n:
+    sum=sum+a
+    a,b=b,a+b
+    i=i+1
+print(sum/n)

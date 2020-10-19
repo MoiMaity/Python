@@ -1,0 +1,36 @@
+POSSIBLE ASSOCIATIONS OF STRING
+
+1. With Repitions 
+
+str='xyz'
+for i in str:
+    for j in str:
+        for k in str:
+            print(i,j,k)
+
+Output:
+xxx
+xxy
+.
+. 
+.
+zzz
+(27 outputs)
+
+2. Without repitions
+
+str='xyz'
+for i in str:
+    for j in str:
+        if i!=j:
+            for k in str:
+                if i!=k and j!=k:
+                    print(i,j,k)
+
+Output:
+xyz
+xzy
+yxz
+yzx
+zxy
+zyx

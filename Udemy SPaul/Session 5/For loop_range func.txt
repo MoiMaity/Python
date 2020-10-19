@@ -1,0 +1,30 @@
+FOR LOOP AND RANGE FUNCTION
+
+In string, for loop will iterate through every characters.
+
+The 3 parameters of RANGE function are : (start,stop,step)
+
+EX #1
+
+range(5)  ->  0,1,2,3,4
+
+start from 0 , go upto 5 but not equal to 5 (step is 1 by default)
+
+EX #2
+
+range(4,10)  ->  4,5,6,7,8,9
+
+start from 4, go upto 10 but not equal to 10 (step is 1 by default)
+
+EX #3
+
+range(3,10,2)  -> 3,5,7,9
+
+start from 3, go upto 10, increasing the value of i by 2 every iteration
+
+EX #4
+
+range(99,0,-1)  ->  99,98,...,1
+
+start from 99, continue upto 0, increasing the value by -1(decreasing by 1) every step
+  
