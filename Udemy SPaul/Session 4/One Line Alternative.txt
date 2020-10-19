@@ -1,0 +1,17 @@
+ONE LINE ALTERNATIVE TO IF-ELSE/ELIF
+
+1. Maximum among 2 numbers
+Code:
+m=x if x>y else y
+
+(corresponds to:
+#if x>y:
+#    m=x
+#else:
+#    m=y)
+
+2. Maximum among 3 numbers
+Code:
+m=x if x>y and x>z else y if y>z else z
+
+(corresponds to equivalent piece of if-else block)
