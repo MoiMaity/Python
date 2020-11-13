@@ -1,0 +1,91 @@
+IMPORTANT LIST METHODS
+PART 1
+
+Nested List -- A list as an element inside another list
+1) x=students[-1]		#list is in last index of this list
+    y=x[1]			#accessing 1th indexed element of nested list
+2)  x=students[-1][1]	#one-liner for method 1
+
+Updation:
+students[-1][1]=9.99
+
+Add new elements to list:
+
+1) Append -- Add new element at END of list.
+Syntax:	students.append("Tina")    Output:  [' ',...,'Tina']
+
+2) Extend -- Adds each character of string individually to END of list.
+Syntax: 	students.extend("Tina")      Output:  [' ',...,'T','i','n','a']
+
+2.1) Appending a whole list to end of list:
+Syntax: lst1=['x','y','z']
+students.append(lst1)
+Output: [' ',...,['x','y','z']]
+
+2.2) For appending lst1 individually:
+Syntax: students.extend(lst1)
+Output: [' ',...,'x','y','z']
+
+3) Insert -- Adds at particular position of list (inserting at index). This has 2 parameters : (index,element)
+Syntax: students.insert(0,"Bob")
+Output: ['Bob',...]
+
+4) Clear -- Clear all elements of list.
+Syntax : students.clear()
+
+5) Copy -- Copies all elements of list to another list.
+Syntax: stud=students.copy()
+
+PART 2
+
+Checking if an element is present in list:
+my_list=[10,20,30]
+1) x=20 in my_list		#'in' operator
+  print(x)			#gives 'bool' output
+Output: True
+2)  if 20 in my_list:
+	...
+     else:
+	...
+
+More functions:
+
+1) Count -- Counts a specific element in a list and gives the result.
+Syntax: c=my_list(30)	#element
+
+2) Reverse -- Reverse the list.
+Syntax: my_list.reverse()
+
+3) Pop -- Delete an element at a particular position and returns the element as well
+Syntax: x=my_list.pop(2)	#index number
+Invalid index throws an exception in python.
+
+4) Remove -- This requires only the element and deletes the 1st occurance of the element only.
+Syntax: my_list.remove(30)
+
+4.1) Removing all occurances:
+Code:
+while 30 in my_list:
+   my_list.remove(30)
+
+5) Index -- Find out the index of the 1st occurance of the element.
+Syntax: x=my_list.index(30)
+It also has 2 parameters beside this : (element,start,stop)
+Example: x=my_list.index(30,4,8)	#search for 30 starting from 4 to 7
+
+5.1) Printing all index:
+Code:
+target=30
+c=my_list.count(target)
+start=0
+i=1
+while i<=c:
+    indx=my_list.index(target,start)
+    print(indx)
+    start=indx+1
+    i+=1
+
+6) Min/Max -- Gets min/max element (numeric) from list
+Syntax: x=min(my_list)/max(my_list)
+
+

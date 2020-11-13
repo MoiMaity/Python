@@ -1,0 +1,23 @@
+UNPACKING OF LIST ELEMENTS
+***Same technique for unpacking "Tuple"***
+
+a,b=['John,'Lucy']	#fetching list elements to different variables is unpacking,
+print(a,b)
+Output:
+John Lucy
+ 
+Unpack only 1st element: (without using 2 variables)
+
+a,_=['John','Lucy]	#underscore(identifier)	#no warning
+
+Unpack 1st element to variable & other to another list :
+
+a,*b=['John,'Lucy','Peter']	#reference to another list 'b'
+a,*_=['John,'Lucy','Peter']	#underscore when the rest list is not needed
+
+Example:
+a_list=[]
+a,*_=a_list	#1st element to a
+_,a,*_=a_list	#2nd element to a
+*_,a,_=a_list	#2nd last element to a
+*_,_,a=a_list	#last element to a

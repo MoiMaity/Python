@@ -1,0 +1,17 @@
+LIST OBJECT CREATION
+
+a_list=[]		#reference to an empty list
+
+Accessing last element of list:
+
+b_list=[10,20,30,40,50]
+print(b_list[len(b_list)-1])
+Output:
+50
+
+Indexing starts from 0 to len-1 of b_list from forward and from -1 to -len from backward.
+
+Iterating each elements:
+
+for i in b_list:
+    print(i)

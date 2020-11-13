@@ -1,0 +1,9 @@
+PYTHON LIST -- THE MUTABLE LINEAR CONTAINER
+
+Python List is sequential organization of data in memory. List is dynamic and mutable. Further the elements of list could be heterogenous.
+1) dynamic -- list can grow or shrink during its runtime.
+2) mutable -- we can update the list elements.
+3) heterogenous -- different types of elements can be in list at the same time.
+
+Data Structure:-
+Data structure is an organization of data in primary memory so that our program can access data efficiently.

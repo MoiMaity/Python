@@ -1,0 +1,21 @@
+LIST SLICING
+
+students=['a','b','c','d','e','f']
+lst=students[1:4]		#another list of 1st, 2nd, 3rd indexed students(not 			including but upto 4)
+lst=students[:4]		#0th,1st,2nd,3rd index
+lst=students[:]		#copy the entire list to another list
+
+students[start:stop:steps]
+
+This can be done with negative index also.
+
+students[-1::-1]		#entire list in REVERSE order
+
+List slicing with invalid start/stop/steps indexes results in equivalent empty lists.
+Example:
+student[-5:-1:-1]
+student[4:1:1]
+
+List slicing can be used with mixed negative/positive index in start/stop.
+Example:
+student[-1:3:-1] will print elemnt from -1(last index) to 3rd index but not 3rd in reverse order. It will print 5th/-1 index then 4th/-2 accordingly.
