@@ -1,1 +1,1 @@
-Welcome to Session 5 of Python from S Paul from Udemy
+Welcome to Session 6 of Python from S Paul from Udemy
