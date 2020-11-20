@@ -1,0 +1,23 @@
+GENERAL
+
+1. Commenting in Python
+
+Example: 		# This is a comment
+		# This is second comment
+These are single line comments
+
+2. Indentation
+
+Indentation is needed under same code block. 
+Generally  4 white spaces is considered indented.
+
+3. Eval() function
+
+Evaluates an expression. Expression can be any python statement.
+Can also be used with keywords/code objects defined function or variables.
+
+Example: 
+
+eval("9+5")		#output: 14
+type(eval("len"))	#output: <type 'built-in-function-or-method'>
+type("len")		#output: <type 'str'>
