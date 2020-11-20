@@ -1,0 +1,37 @@
+IMPORTANT STRING METHODS 
+
+PART 2
+
+1) Split method -- take out values from string separated by character and store it in list object
+
+names = "John,...,...,..."	#demarkation character -- ,
+lst = names.split(",")
+
+2) Upper method -- each character to upper case. makes a new object when called
+
+str_upper = str.upper()
+
+3) Lower method -- each character to lower case.
+
+str_lwr = str.lower()
+
+4) Title method -- convert 1st character of each word in string in uppercase.
+
+str_ttl = str.title()
+
+5) Capitalize method -- convert only 1st character of string to upper case.
+
+str_cap = str.capitalize()
+Also converts other characters to lower case
+
+6) Isupper/Islower method -- checks whether whole string is in upper/lower case or not. returns True/False
+
+str.isupper()/str.islower()
+
+Other string methods :
+
+Isalnum() -- alphabetic/numeric -- True
+Isalpha() -- only alphabetic charcter -- True
+Isdigit() -- only digits in string -- True
+Isdecimal() -- either digits or decimal point --True
+Isspace(), Istitle() etc.

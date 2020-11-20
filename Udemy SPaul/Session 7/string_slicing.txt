@@ -1,0 +1,7 @@
+STRING SLICING
+
+Same as List
+
+[start:stop:step]
+
+reverse : [::-1]

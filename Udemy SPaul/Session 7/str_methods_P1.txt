@@ -1,0 +1,37 @@
+IMPORTANT STRING METHODS
+
+PART 1
+
+1) Count Method --
+
+line = "......"
+c=line.count(" ")	#space
+print(c)
+
+2) Find method -- (A string exist as a substring or not)
+
+target = "is"
+idx = line.find(target)		#returns index of 1st occurance or -1 when not found
+print(idx)
+
+3 parameters -- target,start,stop
+
+Printing all index :
+
+target = " "
+start = 0
+idx = line.find(target,start)
+while idx != -1:
+    print(idx)
+    start = idx + 1
+    idx = line.find(target,start)
+
+3) Index method -- (throws exception when fails)
+
+change "find" with "index" for above method
+
+4) Startswith -- checks if a string starting with some string. returns true/false
+
+print(line.startswith("He"))
+
+5) Endswith -- string ending with some string. also reurns True/False

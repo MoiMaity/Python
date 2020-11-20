@@ -1,0 +1,40 @@
+STRING FORMATTING
+
+name1 = "Anand"
+name2 = "John"
+duration = 10
+
+Not allowed --
+
+str = name1 + "and" + name2 + "are friends for" + str(duration) + "years"
+
+The Method :
+
+str = "{} and {} are friends for {} years".format(name1,name2,duration)		#{} are called placeholders
+
+#name1 = parameter 0, name2 = parameter 1, ... like indexing the parameters are numbered
+1st placeholder is for parameter 0 and so on.
+
+We can also fromat like -- 
+
+str = "{1} and {0} are friends for {2} years, {0} is senior".format(name1,name2,duration)
+
+Placing parameter numbers in placeholders and manipulating the formatting.
+
+Printing in Columns :--
+
+...{1:10}....{2:20}...
+#...(left aligned within column)...(right aligned within column)...
+
+...{1:>10}....{2:<20}...{3:^20}
+#...(enforce right alignment)...(enforce left alignment)...(center alignment - 'cap' operator)
+
+By default, text are left aligned and numeric values are right aligned.
+
+Rounding Float Values :--
+
+{3:10.2f}		# .2f -- upto 2 decimal places
+
+Fill blank columns with characters :--
+
+{2:.<20}		# fills with dot(.) 
