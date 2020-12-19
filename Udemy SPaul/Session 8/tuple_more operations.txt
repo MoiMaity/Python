@@ -1,0 +1,13 @@
+MORE TUPLE OPERATIONS
+
+scores = ()		
+# for numeric values
+max(scores)		# maximum element of scores
+min(scores)		# minimum element of scores
+sum(scores) 		# sum of all elements(all have to be numeric)
+
+animals = ('dog','cat','zebra','lion')
+a = max(animals)	# set dictionary to lexicographical order and then highest order word in a
+
+print(15 in scores)	# True/False output
+print(15 not in scores)	# True/False output (logically opposite)

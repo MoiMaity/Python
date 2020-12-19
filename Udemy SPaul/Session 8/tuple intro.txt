@@ -1,0 +1,13 @@
+TUPLE - INTRO
+
+Immutable collection of objects
+Generates runtime error on element updation
+Elements are indexed in the same way as LISTS
+Elements are heterogenous
+For read-only purposes only
+
+tpl=()		# empty tuple object
+major[0:3]	# creates another reference tuple object 
+
+del major	# deletes entire tuple
+

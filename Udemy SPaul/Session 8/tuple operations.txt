@@ -1,0 +1,13 @@
+TUPLE <-> LIST and VICE VERSA
+
+lst_major = list(major)		# list constructor
+then perform any mutable operations
+then convert back to tuple
+major = tuple(lst_major)	# tuple constructor
+
+CONCATENATE 2 or MORE TUPLES
+
+major = (' ',' ',' ')
+more_sub = ('History', )	# , and then 1 blank space otherwise it will consider as STRING
+new_major = major + more_sub	# concatenated tuple
+
