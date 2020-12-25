@@ -1,0 +1,20 @@
+SET OPERATIONS
+
+PART 2
+
+1) 'in' operator
+'d' in set_a  -->  True/False
+2) 'not in' operator
+3) 'difference_update' method :
+set_a.difference_update(set_b)
+Discard common elements from parameter(set_b)
+4) 'symmetric_difference_update' method :
+set_a.symmetric_difference_update(set_b)
+Common values are dropped and unique members are added to set_a.
+5) 'isdisjoint' method
+disjoint - no common elements
+set_a.isdisjoint(set_b)
+6) 'issubset' method
+set_b.issubset(set_a)
+7) 'issuperset' method
+set_a.issuperset(set_b)

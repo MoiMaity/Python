@@ -1,0 +1,41 @@
+PYTHON SET
+
+INTRO
+
+Set in Python - Set is unordered collection of immutable elements, however, set itself is mutable i.e. we can always add new elements, update, remove elements in a set.
+Equivalent representation to SET in MATHS
+unordered - index is not known to which element it will assign, generates runtime error if we try to access by index
+Representation - set_a = {10,20,30,40,50}
+Discards multiple occurances of an element and picks only one.
+number of elements - len(set_a)
+accessing elements - for x in set_a:
+			print(x)
+add new element - set_a.add(100)	#cannot predict the insert position
+Delete an element:
+1) REMOVE
+generates error if element does not exist
+set_a.remove(20)
+2) DISCARD
+does not do anything if element is not present
+set_a.discard(20)
+Delete all - set_a.clear()
+
+IMMUTABLE ELEMENTS
+
+Cannot have 'list'(mutable) as an element.
+But can have 'tuple'(immutable) as element.
+and also 'string'
+
+PUTTING "TUPLE" MEMBER AS "SET" MEMBER
+
+saarc_countries = (...)
+set_a.update(saarc_countries)		#picks every element of saarc_countries tuple and insert to set set_a
+
+PUTTING "LIST" MEMBER AS "SET" MEMBER
+
+saarc_countries = [...]
+set_a.update(saarc_countries)
+
+CREATING AN EMPTY SET
+
+set_a = set()		#call to the set constructor

@@ -1,0 +1,34 @@
+SET OPERATIONS
+
+PART 1
+
+4 kinds of operations - 
+1) Union
+2) Intersection
+3) Difference
+4) Symmetric Differernce
+
+cricket = {...}
+soccer = {...}
+
+1) Union Operation(Binary op) - either Cricket or Soccer or Both
+eith_or_both = cricket.union(soccer)	or	soccer.union(cricket)
+PIPE OPERATOR (|)
+eith_or_both = cricket | soccer
+
+2) Intersection Operation(Binary op) - only comon elements to both set
+No common element - empty set
+both = cricket.intersection(soccer)	or	soccer.intersection(cricket)
+AMPERSAND OPERATOR (&)
+both = cricket & soccer
+
+3) cricket not soccer ≠ soccer not cricket		(A - B ≠ B - A)
+only_cricket = cricket.difference(soccer)
+MINUS OPERATOR (-)
+only_soccer = soccer - cricket
+
+4) symetric difference - reject all common element to both set and takes all (A ^ B) either cricket or soccer not both
+either_or = cricket.symmetric_difference(soccer)
+EXPONENT OPERATOR (^)
+either_or = cricket ^ soccer
+
