@@ -1,0 +1,34 @@
+DICTIONARY
+
+INTRO
+
+Dictionary in Python is a collection of key-value pairs, we want objects associated with keys
+mutable and keys are always unique
+purpose - locate the object when unique key is supplied
+keys - immutable
+KEY equivalent to UNIQUE ID
+students = {'John':6.78, 'Ket':9.98, 'Raj':8.89}
+print(len(students))
+students['Raj']		#o/p - 8.89
+Keys are actually index of dictionary
+
+CREATE EMPTY DICTIONARY
+
+d = {}
+
+Traversing through dict (keys only):
+
+for k in students:/for k in students.keys():
+    print(k)
+o/p: all keys
+Values: print(student[k])
+
+Iterating through values only:
+
+for v in students.values():
+    print(v)
+
+Iterating through pairs:
+
+for k,v in students.items():	
+    print(k,v)

@@ -1,0 +1,14 @@
+DICTIONARY OPERATIONS 
+
+PART 2
+
+name = {'John','Peter','Kate','Rick','Tina'}
+students = {}.fromkeys(names)		#pick up eack element od set 'names' & push them to dictionary as keys
+Associated values - NONE(default)
+students = {}.fromkeys(names,0.0)	#0.0 - value parameter for all keys
+fromkeys - accepts any of list , tuple or set
+
+Get the value of a key
+
+students.get('Raja')			#'Raja' not in dict. o/p: None
+students.get('ABC',99.99)		#o/p:99.99  ABC doesn't exist

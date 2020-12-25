@@ -1,0 +1,17 @@
+FORMATTING USING 'FORMAT' & 'FSTRING'
+
+FORMAT
+
+student = {'Rambo':'Rambo','GPA':9.1,'Grade':'O'}
+fmt_string = 'Name of student:{0}, GPA:{1} and Grade:{2}'.format(student['name'],student['GPA'],student['Grade'])
+inside format - keys
+placeholders - values
+
+Passing keys in placeholders:
+
+fmt_string = 'Name of student:{0[name]}, GPA:{1[GPA]} and Grade:{2[Grade]}'.format(student)	#student - pass 1 time only
+
+FSTRING
+
+fmt_str = f'Name of student:{student["name"]}, GPA:{student["GPA"]} and Grade:{student["Grade"]}'
+

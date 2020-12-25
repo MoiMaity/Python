@@ -1,0 +1,13 @@
+DICTIONARY OPERATIONS 
+
+PART 1
+
+students['Peter'] = 9.95	#inserted at end
+print(students)			#new value with Peter addded as key
+students['John'] = 8.25		#value gets updated
+del students['John']		#throws an exception when key is not found
+v = students.pop('John')	#deletes and also returns associated value, throws exception
+v = students.pop('Rambo') 	#returns default(None) when key not found
+if 'Rambo' in students:
+    v = students.pop('Rambo')	#checking then calling pop method
+students.clear()		#clears all keys
