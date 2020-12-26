@@ -21,3 +21,47 @@ Example:
 eval("9+5")		#output: 14
 type(eval("len"))	#output: <type 'built-in-function-or-method'>
 type("len")		#output: <type 'str'>
+
+4. None keyword
+
+None in Python equivalent to NULL in C
+
+5. KEYWORDS
+
+False
+None
+True
+and
+as
+assert
+break
+class
+if
+def
+del
+elif
+else
+except
+return
+for
+from
+global
+try
+import
+in
+is
+lambda
+while
+not
+or
+pass
+raise
+finally
+continue
+nonlocal
+with
+yield
+
+6. VARIABLES in Python
+
+Variables are case-senstivite in Python
