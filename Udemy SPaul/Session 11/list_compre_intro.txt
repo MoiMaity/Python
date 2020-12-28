@@ -1,0 +1,19 @@
+LIST COMPREHENSION
+
+INTRO - fill a list with desired values
+
+Declaration:
+
+Normal - 
+
+lst = []
+for i in range(10):
+    lst.append(i)
+
+list comprehension:
+
+lst = [i for i in range(10)]	
+
+3 parts - expression , iteration , condition
+
+lst = [i for i in range(100) if i % 2 == 0]

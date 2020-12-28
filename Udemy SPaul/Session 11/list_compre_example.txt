@@ -1,0 +1,21 @@
+EXAMPLES
+
+1) taking odd elements from another list:
+
+b_list = [p for p in a_list if p % 2 != 0]
+
+2) picking elements from dictionary:
+
+grade_o = [name for name,gpa in students.items() if gpa >= 9.0 and name.startswith('T')]
+
+3) picking elements from a dictionary to another dictionary: (dictionary comprehension)
+
+grade_o = {name:'O' for name,gpa in students.items() if gpa >= 9.0 and name.startswith('T')}
+
+4) products of elements of 2 lists & taking to another list:
+
+c_list = [i * j for i in a_list for j in b_list if i * j <= 100]
+
+5) cartesian product of 2 lists:
+
+c_list = [(i,j) for i in a_list for j in b_list]
