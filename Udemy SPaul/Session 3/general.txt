@@ -64,4 +64,15 @@ yield
 
 6. VARIABLES in Python
 
-Variables are case-senstivite in Python
+Variables are case-senstivite in Python 
+
+7. Different methods for Lists and Tuples
+
+l = list()
+dir(l)
+append, count, extend, index, insert, pop, remove, reverse, sort
+
+t = tuple()
+dir(t)
+count, index
+
