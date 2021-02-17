@@ -1,0 +1,208 @@
+﻿Assignment 14.01.21
+
+
+1)
+import datetime
+date = datetime.datetime.today()
+print("Today's date:",date.date)
+print("Current time:",date.time)
+
+
+Output:
+Today's date: <built-in method date of datetime.datetime object at 0x7f157d041fa8>
+Current time: <built-in method time of datetime.datetime object at 0x7f157d041fa8>
+
+
+2) 
+import calendar
+year = int(input("Enter the year: "))
+month = int(input("Enter the month no.: "))    
+try:
+    print(calendar.month(year, month))
+except:
+    print("Wrong input.")
+
+
+Output:
+Enter the year: 2020
+Enter the month no.: 5
+      May 2020
+Mo Tu We Th Fr Sa Su
+             1  2  3
+ 4  5  6  7  8  9 10
+11 12 13 14 15 16 17
+18 19 20 21 22 23 24
+25 26 27 28 29 30 31
+
+
+3)
+import calendar
+for i in range(1,13):
+    print("Month", str(i)+":", str(calendar.month_name[i]))
+
+
+Output:
+Month 1: January
+Month 2: February
+Month 3: March
+Month 4: April
+Month 5: May
+Month 6: June
+Month 7: July
+Month 8: August
+Month 9: September
+Month 10: October
+Month 11: November
+Month 12: December
+
+
+4)
+import calendar
+for i in range(7):
+    print("Day", str(i+1)+":", str(calendar.day_name[i]))
+
+
+Output:
+Day 1: Monday
+Day 2: Tuesday
+Day 3: Wednesday
+Day 4: Thursday
+Day 5: Friday
+Day 6: Saturday
+Day 7: Sunday
+
+
+5)
+import calendar
+n = int(input("Enter a year: "))
+c=calendar.Calendar(calendar.MONDAY)
+for i in range(12):
+    d=c.monthdayscalendar(n,i+1)
+    print(calendar.month_name[i+1]," = "+str(d[0][0] if d[0][0]!=0 else d[1][0]))
+
+
+Output:
+Enter a year: 2020
+January  = 6
+February  = 3
+March  = 2
+April  = 6
+May  = 4
+June  = 1
+July  = 6
+August  = 3
+September  = 7
+October  = 5
+November  = 2
+December  = 7
+
+
+6) 
+module_func.py
+
+
+def f1(x, y):
+    if y <= x:
+        return f1(x - y, y) + 1
+    return 1
+
+
+def f2(n, r):
+    if n > 0 or r > 0:
+        return f2(n - 1, r) + f2(n - 1, r - 1)
+    else:
+        return 0
+
+
+def f3(n):
+    if n > 1:
+        return f3(n / 2) + 1
+    return 0
+
+
+def f4(m, n):
+    if m == 0 or (m >= n and n >= 1):
+        return 1
+    else:
+        return f4(m - 1, n) + f4(m - 1, n - 1)
+
+
+def fact(n):
+    p = 1
+    for i in range(1, n + 1):
+        p *= i
+    return p
+
+
+def f5(m, x):
+    if x == 0:
+        return 1
+    if m > x:
+        return fact(m) / (fact(x) * fact(m - x))
+    else:
+        return f5(m, x - 1) * ((m - x + 1) / x)
+
+
+main.py
+
+
+import module_func as mf
+while 1:
+    print("Enter the function number (eg:-1 for function 1)\nPress 6 to exit")
+    c = int(input())
+    if c == 1:
+        print("Enter x and y:")
+        x, y = input().split()
+        x = int(x)
+        y = int(y)
+        print("Result=", mf.f1(x, y))
+    elif c == 2:
+        print("Enter n and r:")
+        n, r = input().split()
+        n = int(n)
+        r = int(r)
+        print("Result=", mf.f2(n, r))
+    elif c == 3:
+        n = int(input("Enter n:"))
+        print("Result=", mf.f3(n))
+    elif c == 4:
+        print("Enter m and n")
+        m, n = input().split()
+        m = int(m)
+        n = int(n)
+        print("Result=", mf.f4(m, n))
+    elif c == 5:
+        print("Enter m and x")
+        m, x = input().split()
+        m = int(m)
+        x = int(n)
+        print("Result=", mf.f5(m, x))
+    elif c == 6:
+        print("Thanks")
+        break
+    else:
+        print("Wrong input")
+
+
+Questionaires:
+
+
+1. Pip is a package management system written in Python used to install and manage software packages.It connects to an online repository of public and paid for private packages called the Python Package Index.Most distributions of Python come with pip pre-installed.
+
+
+2. Pip comes pre-installed on the python.We can check if pip is installed by using the command in the console: 
+
+
+pip --version
+
+
+If pip is already installed the pip version is displayed in the console.
+
+
+3. The following command can be used to list all the available packages in the current python environment:
+
+
+pip list
+
+
+The output will be the available package names with the version of the packages.

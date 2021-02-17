@@ -1,0 +1,303 @@
+﻿MODULES  &  PACKAGES
+1)
+import calendar
+def take_int(s):
+    try:
+        n = int(input(s))
+        return n
+    except:
+        print("You entered a wrong input!!!")
+        return take_int(s)
+while True:
+    choice = input("Enter 1 to check if a year is leap year or not.
+Enter 2 to count the number of years in between two years.
+Enter anything else to exit.
+Enter your choice: ")    
+    if choice == "1":     
+        year = take_int("Enter the year you want to check for: ")
+        if calendar.isleap(year):
+            print(str(year), "is a leap year")
+            continue
+        print(str(year), "is not a leap year")
+        continue  
+    if choice == "2":
+        year1 = take_int("Enter the first year: ")
+        year2 = take_int("Enter the second year: ")
+        count  = 0
+        for year in range(year1, year2+1):
+            if calendar.isleap(year):
+                count  = count + 1
+        print("There are", str(count), "number of leapyear(s) in between", str(year1), "and", str(year2))
+        continue
+    break
+Output:
+Enter 1 to check if a year is leap year or not.
+Enter 2 to count the number of years in between two years.
+Enter anything else to exit.
+Enter your choice: 1
+Enter the year you want to check for: 2020
+2020 is a leap year
+
+
+2)
+import calendar
+n=2021
+c=calendar.Calendar(calendar.MONDAY)
+for i in range(12):
+    d=c.monthdayscalendar(n,i+1)
+    print(calendar.month_name[i+1]," = "+str(d[0][0] if d[0][0]!=0 else d[1][0]))
+
+
+Output:
+January  = 4
+February  = 1
+March  = 1
+April  = 5
+May  = 3
+June  = 7
+July  = 5
+August  = 2
+September  = 6
+October  = 4
+November  = 1
+December  = 6
+
+
+3)
+import datetime
+today = datetime.datetime.now()
+print("year:", str(today.year))
+print("month:", str(today.month))
+print("day:", str(today.day))
+print("time:", str(today.time()))
+print("date and time:", str(today.date()), str(today.time()))
+
+
+Output:
+year: 2021
+month: 1
+day: 13
+time: 15:21:50.728066
+date and time: 2021-01-13 15:21:50.728066
+
+
+4)
+import random
+count = {1:0, 2:0, 3:0, 4:0, 5:0, 6:0}
+for i in range(6000):  
+    key = random.randint(1, 6)
+    count[key] = count[key] + 1    
+for i in range(1,7):    
+    print(str(i), "occured", str(count[i]), "times.")
+
+
+Output:
+1 occured 968 times.
+2 occured 1013 times.
+3 occured 1033 times.
+4 occured 999 times.
+5 occured 1019 times.
+6 occured 968 times.
+
+
+PACKAGES
+
+
+PATTERNS    
+Pattern.py
+def pypart(n):     
+    for i in range(0, n): 
+       print("* " * (i+1))
+
+
+def pypart2(n):       
+    # number of spaces 
+    k = 2*n - 2  
+    # outer loop to handle number of rows 
+    for i in range(0, n): 
+         # inner loop to handle number spaces 
+        # values changing acc. to requirement 
+        for j in range(0, k): 
+            print(end=" ")     
+        # decrementing k after each loop 
+        k = k - 2      
+        # inner loop to handle number of columns 
+        # values changing acc. to outer loop 
+        for j in range(0, i+1):           
+            # printing stars 
+            print("* ", end="")       
+        # ending line after each row 
+        print("\r") 
+
+
+def triangle(n):     
+    # number of spaces 
+    k = 2*n - 2  
+    # outer loop to handle number of rows 
+    for i in range(0, n): 
+        # inner loop to handle number spaces 
+        # values changing acc. to requirement 
+        for j in range(0, k): 
+            print(end=" ")      
+        # decrementing k after each loop 
+        k = k - 1    
+        # inner loop to handle number of columns 
+        # values changing acc. to outer loop 
+        for j in range(0, i+1):           
+            # printing stars 
+            print("* ", end="")    
+        # ending line after each row 
+        print("\r") 
+
+
+def numpat(n):       
+    # initialising starting number  
+    num = 1 
+    # outer loop to handle number of rows 
+    for i in range(0, n):       
+        # re assigning num 
+        num = 1      
+        # inner loop to handle number of columns 
+            # values changing acc. to outer loop 
+        for j in range(0, i+1):         
+                # printing number 
+            print(num, end=" ")         
+            # incrementing number at each column 
+            num = num + 1
+             # ending line after each row 
+        print("\r") 
+
+
+def contnum(n):      
+    # initializing starting number  
+    num = 1  
+    # outer loop to handle number of rows 
+    for i in range(0, n):       
+        # not re assigning num 
+        # num = 1       
+        # inner loop to handle number of columns 
+        # values changing acc. to outer loop 
+        for j in range(0, i+1):           
+            # printing number 
+            print(num, end=" ")           
+            # incrementing number at each column 
+            num = num + 1      
+        # ending line after each row 
+        print("\r")
+main.py
+import pattern
+pattern.pypart(5)
+pattern.pypart2(5)
+pattern.triangle(5)
+pattern.numpat(5)
+pattern.contnum(5)
+
+
+ANIMALS:
+Amphibian.py
+def charecteristics():
+    print("Some charecteristics of amphibians are -")
+    print("1. Amphibians are vertebrates.")
+    print("2. Their skin is smooth and slimy.")
+    print("3. Amphibians breath through their skin, as well as their lungs in some cases.")
+    print("4. Amphibians are cold-blooded.")
+    print("5. They have a complex life cycle (larval and adult stages).")
+
+
+def examples():
+    print("Some examples of amphibians are - frog, caudata, salamander.")
+
+
+Bird.py:
+def charecteristics():
+    print("Some charecteristics of bird are -")
+    print("1. All birds have wings, but not all birds fly.")
+    print("2. Feathers are an obvious trait.")
+    print("3. Beaks or bills are another characteristic of birds.")
+    print("4. All birds lay eggs.")
+    print("5. Bird skeletons are designed specifically to keep birds light so they can fly.")
+
+
+def examples():
+    print("Some examples of bird are - sparrow, peacock, ostrich, pigeon, dove.")
+
+
+Fish.py:
+def charecteristics():
+    print("Some charecteristics of fish are -")
+    print("1. All fish are cold-blooded, which is also called ectothermic.")
+    print("2. Another shared characteristic amongst all fish is that they live in water.")
+    print("3. One basic criteria for a fish is the presence of gills throughout its life cycle.")
+    print("4. All fish have a swim bladder.")
+    print("5. Fins are an almost universal characteristic of fish.")
+
+
+def examples():
+    print("Some examples of fish are - Dolphin, sailfish, searobin, pompano, spot.")
+
+
+Mammal.py:
+def charecteristics():
+    print("Some charecteristics of mammals are -")
+    print("1. They are covered with hair.")
+    print("2. They are warm-blooded.")
+    print("3. They have larger and more complex brains than any other group of animals.")
+    print("4. They are usually born alive.")
+    print("5. After birth the young are fed with milk that is produced by mammary glands.")
+
+
+def examples():
+    print("Some examples of mammals are - pig, cat, bear, tiger, lion.")
+
+
+Reptile.py:
+def charecteristics():
+    print("Some charecteristics of reptiles are -")
+    print("1. Reptiles Are Oviparous (Egg Laying)")
+    print("2. Reptiles Are Cold-Blooded (Ectohtermic)")
+    print("3. Reptiles Typically Have Four Legs.")
+    print("4. Reptiles Breathe Through Lungs.")
+    print("5. Reptiles Are Vertebrates.")
+
+
+def examples():
+    print("Some examples of reptiles are - lizard, turtle, crocodile, snake.")
+
+
+Creatures.py:
+import fish, bird, amphibian, mammal, reptile
+def _init_(self):
+    print("Find your informaation about creatues: examples and charecteristics")
+
+
+Main.py:
+import creatures
+while True:
+    print("Enter 1 for fish")
+    print("Enter 2 for bird")
+    print("Enter 3 for amphibian")
+    print("Enter 4 for reptile")
+    print("Enter 5 for mammal")
+    print("Enter anything else to exit")
+    ch = int(input("Enter your choice: "))
+    if ch == 1:
+        creatures.fish.examples()
+        creatures.fish.charecteristics()
+        continue
+    if ch == 2:
+        creatures.bird.examples()
+        creatures.bird.charecteristics()
+        continue
+    if ch == 3:
+        creatures.amphibian.examples()
+        creatures.amphibian.charecteristics()
+        continue
+    if ch == 4:
+        creatures.reptile.examples()
+        creatures.reptile.charecteristics()
+        continue
+    if ch == 5:
+        creatures.mammal.examples()
+        creatures.mammal.charecteristics()
+        continue
+    break
