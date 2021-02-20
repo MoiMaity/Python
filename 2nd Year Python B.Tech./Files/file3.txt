@@ -1,0 +1,6 @@
+
+.enil modnar tsal dna driht eht si sihT
+.enil modnar rehtona si sihT
+.enil modnar ts1 si sihT
+.1 noitseuq ni desu si elif sihT
+.elif tset a si sihT
