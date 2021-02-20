@@ -1,0 +1,14 @@
+PASSING PARAMETERS TO FUNCTION:
+
+def say_hello(name):
+    print('Welcome!',name)
+say_hello('John')
+say_hello('Peter')
+
+Positional Parameter --> 1st value passing in argument is going to be 1st in the function and so on.
+can use 'prompt' variable in function for different parameter passing
+
+def func(prompt):
+  #pass
+x = func(5)
+y = func(6)

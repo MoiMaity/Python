@@ -1,0 +1,20 @@
+MAIN MODULE IN PYTHON : '__main__'
+
+We can reuse the function by calling from another module(.py file)
+
+Method 1:
+
+import filename			#filename = name of file where original function is
+y = filename.func_name(param)	#func_name = name of function, param = parameter
+
+Method 2:
+
+from filename import func_name
+y = func_name(param)
+
+When calling func_name, other things also got executed. We can use __name__ here.
+Value of __name__ changes in 2nd program as 1st program's extra contentgets executes as the 'filename'.
+Value of __name__ will be __main__ when python calls the module directly.
+
+if __name__ == '__main__':		#check whether module is called directly
+    #pass

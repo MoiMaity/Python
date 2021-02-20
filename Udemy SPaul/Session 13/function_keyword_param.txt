@@ -1,0 +1,16 @@
+KEYWORD-BASED PARAMETERS
+
+formal arguments -- passing in function defintion
+actual arguments -- values given when function is called 
+position-based paramter passing -- normally we do calling parameter in any order.
+
+def process(name,age,major):
+    #pass
+process(name = 'John', age = 20, major = 'Zoology')
+
+Restriction:
+
+We cannot mix non-keyword-based parametr with keyword-based ones.
+
+Just do position based parameter passing for non-keyword based and for others in any order.
+Position-based at beginning and then others.

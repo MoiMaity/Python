@@ -1,0 +1,25 @@
+PARAMETER PASSING - MORE CONCEPTS
+
+The reference of the object is always copied as a 'formal argument' in function definition.
+For immutable object usage in Python, 'return' must be used. e.g. bool, int, float, tuple, str, frozenset, bytes
+For mutable objects, 'return' is not required. e.g. list, set, dict, byte array.
+
+frozenset
+
+nu = (1,2,3,4,5)
+fnum = frozenset(nu)
+print(fnum)
+o/p:
+frozenset({1, 2, 3, 4, 5})
+
+byte (encoded string)
+
+a = 'Hello'
+c = b'Hello'
+d = a.encode(ASCII)
+Here c is the output of d
+
+bytearray (array of given bytes)
+
+syntax: bytearray([source[,encoding[,error]]])
+mutable sequence of integers in range 0 to 256

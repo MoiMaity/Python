@@ -1,0 +1,7 @@
+RETURNING KEYWORDS FROM FUNCTION
+
+return statement		#'statement' is any Python statement
+Object reference available in function is only accessible within the function.
+Unreachable Code -- anything that is written after 'return' statement
+We can return more than 1 value using 'return'
+Also in main program, more than 1 variable is required for accessing 'return'.

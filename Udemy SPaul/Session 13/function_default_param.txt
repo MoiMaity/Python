@@ -1,0 +1,10 @@
+DEFAULT PARAMETER
+
+We can make a default value for any argument in parametr.
+def process(name, age, major = 'Physics'):
+    print(name, age, major)
+process('John',20)
+
+Mentioning parameter will override the default one.
+
+N.B. - Default parametrs will always be after non-default ones.

@@ -1,0 +1,9 @@
+MODULARIZE PROGRAMS USING FUNCTIONS
+
+Intro (writing user-defined functions in Python)
+
+Functions are independent code block with set of codes to perform a set of tasks and when we call them they do the task.
+
+def say_hello():
+    print('Welcome!')		#no space, no digit starting with, no invalid charcter)
+

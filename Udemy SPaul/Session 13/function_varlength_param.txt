@@ -1,0 +1,11 @@
+VARIABLE LENGTH PARAMETERS (*args & **kwargs)
+
+*var_name = variable length paramter	# * = identifier
+
+All values are received in 'tuple'.
+All are position-based.
+For keyword-based arguments : **kwargs (pass this along with *args)	# ** = identifier
+**kwargs receives values in 'dictionary'.
+We can pass nothing when calling a function with only *args and **kwargs.
+We have to give keyword-based arg when fixed parametr is between *args and **kwargs.
+We cannot have fixed param after *args & **kwargs both.
