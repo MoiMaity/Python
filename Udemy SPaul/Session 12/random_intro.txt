@@ -1,0 +1,22 @@
+RANDOM MODULE
+
+import random
+v = random.random()		#v E [0,1) generates random
+
+CUSTOM RANGE
+
+Method 1:
+
+min = 5.0
+max = 12.0
+width = max - min
+for i in range(10):
+    v = random.random() * width + min		#v E [5,12)
+
+Method 2: (Uniform Function)
+
+v = random.uniform(min,max)
+
+Generating int numbers:
+
+v = random.randint(min,max)			#v E [5,12]

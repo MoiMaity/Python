@@ -1,0 +1,28 @@
+LIST ELEMENT RANDOM SELECTION
+
+Fake contact making:
+
+contact = f'{random.randint(100,999)}-555-{random.randint(1000,9999)}'
+
+Choice Function:(sequence must be non-empty)
+
+f_name = random.choice(first_name)		#parameter is a list
+l_name = random.choice(last_name)
+name = f_name + ' ' + l_name
+
+Choices function:
+
+sel_colors = random.choices(colors,k = 8)		#k=parameter
+
+Prefer over some elements:
+
+sel_colors = random.choices(colors,weights = [40,40,20],k = 8)	#weights sum to 100 (percentage)
+
+Shuffle function:
+
+my_list = list(range(100))
+random.shuffle(my_list)
+
+Sample function:(picking unique elements) Ex: hand of cards from 52 cards
+
+sel = random.sample(my_list,k = 5)
