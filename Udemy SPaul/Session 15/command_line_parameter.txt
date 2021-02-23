@@ -1,0 +1,16 @@
+COMMON LINE PARAMETER
+
+When executing program from terminal we can pass some information to the program (windows terminal)
+Type : (in cmd) python
+(anaconda prompt) : python 'name'.py 	press enter
+		    //output//
+		    python 'name'.py Shibaji  	press enter
+		(import sys
+		print(sys.argv)) in name.py
+
+Demarkation between parametrs is space.
+Use double quotes to use with demarkation.
+
+In Pycharm (import sys as well) :
+
+Type program -> run -> edit configurations -> pass parameters in Parameters text box -> Run program.
