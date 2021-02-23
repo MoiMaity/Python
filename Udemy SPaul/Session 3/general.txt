@@ -76,3 +76,4 @@ t = tuple()
 dir(t)
 count, index
 
+8. Py uses 28 bytes for integer in memory.
