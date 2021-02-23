@@ -1,0 +1,13 @@
+WRITING INTO FILE & APENDING
+
+open the file with context manager with 'w' parameter.
+
+file_object.write()			# write anything in 'parameter'
+
+existing content gets overwritten if any file containing is opened in 'w' mode.
+open in 'append' mode to add things to file with existing content.
+
+file_object.writelines(names)		#no space there
+file_object.writelines("\n".join(names))	#new line between every name
+#also can use a for loop for above method
+

@@ -1,0 +1,35 @@
+FILE HANDLING
+
+Intro
+
+Two types of files:
+1. Text Files -- readable files
+2. Binary Files -- any image, video file
+
+Read Text from file
+
+file_object = open('//provide entire path otherwise just name while in same folder//',operation)
+
+text mode operations:
+1. read -- 'r'
+2. write -- 'w'
+3. append -- 'a'
+default -- read
+
+binary mode operations:
+1. read -- 'rb'
+2. write -- 'wb'
+3. append -- 'ab'
+deafult -- read
+
+read contents of a file - 'r'
+raises exception -- FileNotFoundError
+
+lines = file_object.read()			#returns all content as string
+file_object.close()				#mandatory to close after doing task
+file_object.read(10)				#parameters = no. of characters to be read
+file_object.readline()				#reads 1st line and also \n
+file_object.readlines()				#returns list of each lines of a file (also \n)
+
+for lines in file_object:
+    print(line[:-1])			#discard \n at end and prints all lines.

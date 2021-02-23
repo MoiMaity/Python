@@ -1,0 +1,10 @@
+'READ' & 'WRITE' SIMULTANEOUSLY
+
+read and write is exclusive.
+
+'r+' -- basic operation is read, write alongside
+'w+' -- basic operation is write, read secondary
+'a+' -- basic operation is append, read secondary
+
+'r+b', 'w+b', 'a+b' for binary files.
+

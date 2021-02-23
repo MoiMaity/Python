@@ -1,0 +1,10 @@
+CONTEXT MANAGER
+
+manage resourses in py.
+create context manager:
+
+with open('---.txt','r') as file_object:
+    #pass
+
+context manager closes file implicitly as 'with' block ends.
+still can access the file_object reference though the file_object is closed.

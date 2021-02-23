@@ -1,0 +1,14 @@
+SEEK FOR BIN FILE
+
+Open using 'rb' mode
+
+Towards the beginning -- file_object.seek(-5,1) from current position
+From the EOF -- file_object.seek(0,2) at EOF
+Last 4 charcters -- file_object.seek(-4,2) from EOF
+
+b'ood' -- binary string
+
+UTF-8 -- 1 byte as character
+UTF-16 -- 2 byte as character
+
+content.decode('ascii') -- converts to ascii string 	#o/p:ood

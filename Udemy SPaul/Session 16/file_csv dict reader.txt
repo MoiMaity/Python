@@ -1,0 +1,11 @@
+CSV DICT READER
+
+csv_dict_reader = csv.DictReader(file_object)
+
+Ordered dict -- keys are kept in same order as they are inserted
+Normal dict -- key may not be kept in same order
+
+fieldnames = csv_dict_reader.fieldnames() -- list of headings
+fieldnames = csv_dict_reader.DictReader(file_object, fieldnames = [',,,,'])	#fieldnames = parameter when no header
+
+fieldnames[0] = heading column 1

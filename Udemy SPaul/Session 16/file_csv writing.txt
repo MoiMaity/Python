@@ -1,0 +1,18 @@
+CSV WRITING
+
+csv_writer = csv.writer(file_object, delimiter obj, quotechar = '"', quoting = CSV.QUOTE_MINIMAL)
+Quoting will work if there is delimiter or quotechar (default).
+
+csv_writer.writerow(e)			#list containing dictionary of rows.
+
+with open(...., newline = '')		#no extra line
+
+fieldnames list.
+
+csv_dict_writer.csv.DictWriter(..,..,..,fieldnames = fieldnames)	#fieldnames = compulsory parameter
+csv_dict_writer.writeheader()
+csv_dict_writer.writerows(employees)
+
+for single row:
+
+csv_dict_writer.writerow(e)

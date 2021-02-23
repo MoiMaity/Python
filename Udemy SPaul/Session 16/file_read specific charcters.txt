@@ -1,0 +1,7 @@
+READING SPECIFIC CHARACTERS FROM FILE
+
+open file in 'r' mode
+
+file_object.read(8)		#first 8 characters only
+
+putting in loop while EOF -- reading 8 characters at a time	#EOF = if content == ' ':

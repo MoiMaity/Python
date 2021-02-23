@@ -1,0 +1,23 @@
+SEEK & TELL
+
+Marker inside the file content and tracks the current position for 'read' & 'write' operation.
+It is in beginning when file_object is created.
+No. of bytes written upto current marker location -- 'tell' method.
+
+file_object.tell()
+
+tell method when marker at the end -- size of file
+relocate the marker anywhere in file at any time -- 'seek' method.
+2 parameters -- no. of bytes to move, whence (relative positions) (by default = 0)
+3 different relative positions:
+
+0: Beginning of file
+1: Current position
+2: End of file	
+
+file_object.seek(10,0)			#10 bytes from beginning
+
+whence is only 0 for text file.
+whence 0,1,2 for binary file.
+
+File amrker to the beginning -- file_object.seek(0)

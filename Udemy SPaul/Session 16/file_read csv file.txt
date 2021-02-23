@@ -1,0 +1,6 @@
+READING CSV FILE WITH CSV MODULE
+
+Heading -- meta data in csv file
+
+import csv
+csv_reader = csv.reader(file_object, delimiter = ',')	(default delimiter = ',')
