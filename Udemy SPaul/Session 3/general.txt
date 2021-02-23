@@ -77,3 +77,5 @@ dir(t)
 count, index
 
 8. Py uses 28 bytes for integer in memory.
+
+9. round(var,2) -- #2 = places of decimal
