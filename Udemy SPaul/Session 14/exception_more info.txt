@@ -1,0 +1,9 @@
+MORE INFORMATION
+
+We have to get more info about the exception raised.
+We can catch reference of exception object like:
+
+except ValueError as ve:		#any valid variable identifier
+    print(ve.args)
+
+May have different exceptions raised. Also can have many 'except' block.

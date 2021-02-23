@@ -1,0 +1,7 @@
+HOW TO RAISE EXCEPTION
+
+Raising exception from function defined
+
+ve = ValueError('some string')		#valueerror object
+raise ve				#terminated function
+

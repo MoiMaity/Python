@@ -1,0 +1,9 @@
+HANDLING GENERAL EXCEPTION
+
+Handling multiple exception:
+
+except Exception as e:  		#Exception = base class to exception
+    print(e.args)			#subclass = keyerror, valueerror
+
+Captures all exceptions. Python looks exception list top to bottom of code.
+"Particular except block" must be always before "general except handler".

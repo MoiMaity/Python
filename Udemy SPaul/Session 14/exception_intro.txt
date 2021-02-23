@@ -1,0 +1,21 @@
+RUNTIME EXCEPTION HANDLING
+
+Intro:
+
+Mistakes:
+1. Syntax Errors -- typing mistakes
+2. Logical Errors -- proper testing required
+3. Runtime Exceptions -- exceptional situations
+
+ValueError : error finding value in any list/object	#different types of classes
+KeyError : error finding key in dictionary		#different types of classes
+
+TRY & EXCEPT BLOCK
+
+Under TRY block : Code that is supposed to generate exception.
+Answer of TRY : SUCCESS/FAILURE
+
+Under EXCEPT block : Code for handling exception.
+EXCEPT block will never execute till any exception in TRY is generated.
+
+
