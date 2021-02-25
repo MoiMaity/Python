@@ -1,0 +1,13 @@
+SUPERMOST CLASS IN PY - OBJECT CLASS
+
+class Rectangle:
+    #pass
+r = Rectangle(10,4)
+print(r)
+print(r.__str__())		#dunder <str>
+
+Any class is extended from object class by default in Py.
+It contains dunder str itself, dunder repr, ...
+
+issubclass(Rectangle, object)		#object = check (2nd parameter)
+-- True

@@ -1,0 +1,43 @@
+INHERITANCE
+
+INTRO
+
+In real world, types are hierarchically bound. This is the basis of Inheritance.
+We can find parent-child relationship between types.
+We can create a class that can inherit the feature of another class.
+
+INHERITANCE IN PYTHON
+
+class Human:
+    def __init__(self, name):
+	self.name = name
+    def smile(self):
+	print(self.name, 'is smiling')
+    def walking(self):
+	#pass
+class Student(Human):		#syntax -- subclass(supercalss)
+    #pass
+class Teacher(Human):
+    #pass
+
+2 allocations of object creation -- 1 for subclass, 1 for superclass
+First superclass then subclass
+
+class Student(Human):
+    def __init__(self, roll_no, name):
+	supar().__init__(name)		#name is passed to Human init first
+	self.roll_no = roll_no		# can be written as Human.__init__(self, name)	#self is used explicitly
+    def study(self):
+	self.name			#name of Human class
+class Teacher(Human):
+    def __init__(self, dept_name, name):
+	super().__init__(name)
+	self.dept_name = dept.name
+    def take_class(self):
+	#pass
+s1 = Student(1,'John')
+t1 = Teacher('Computer Science','Malik')
+s1.smile()
+t1.smile()
+s1.study()
+t1.take_class()

@@ -1,0 +1,44 @@
+TYPES OF INHERITANCE - MULTILEVEL & MULTIPLE
+
+class have 1 parent - multilevel
+class have more than 1 parent - multiple
+
+multilevel :
+
+class A:
+    pass
+class B(A):
+    pass
+class C(B):
+    pass
+c = C()
+
+multiple :
+
+class A:
+    pass
+class B:
+    pass
+class C(A, B):
+    pass
+
+Diamond problem :
+
+method resolution order -- solution (depth first, left to right)
+see by using dunder __mro__
+
+class X:
+    pass
+class A(X):
+    pass
+class B(X):
+    pass
+class C(A, B):
+    pass
+c = C()
+c.func_x()
+print(c.__mro__)
+
+Example:
+
+Dynamic Polymorphism

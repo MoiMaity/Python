@@ -1,0 +1,16 @@
+ANSTRACT METHOD & ABSTRACT BASE CLASS
+
+include a behaviour in supertype, but have to know subtype -- abstract method
+
+class Human(ABC):
+    @abstractmethod
+    def smile(self):		#Abstract method
+	pass			#force subtype class to be overrided.
+
+Need to import
+	from abc import ABC, abstractmethod
+
+What if we do not extend to ABC & not decorate to @abstractmethod ?
+-- not a mandatory for subtype writers (mistake)
+
+We cannot construct object from Human class. (since it is extended to ABC).

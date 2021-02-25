@@ -1,0 +1,11 @@
+METHOD OVERRIDING
+
+Redefine a method in subtype inherited from supertype -- method overriding
+
+Override smile() method:
+
+class Student(Human):
+    #pass
+    def smile(self):			#overrided smile gets precedence over Human smile
+	print(---)
+
