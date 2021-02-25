@@ -1,0 +1,16 @@
+MAGIC METHODS OR DUNDERS
+
+PART 1
+
+Complex number class
+Dunders - special method - methods surrounded by '__'
+
+Difference between repe & str
+
+repr -
+1. returns unambiguous representation of object as string.
+2. mainly for programmers to understand internal representation of object.
+str -
+1. returns readable representation of object as string.
+2. this is for printing the state of the object in readable format.
+

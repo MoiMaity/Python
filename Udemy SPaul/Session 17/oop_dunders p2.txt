@@ -1,0 +1,17 @@
+PART 2 (CREATING COMPLEX NUMBERS CLASS)
+
+class Complex:
+    def __init__(self, real = 1, img = 1):
+	self.real = real
+	self.img = img
+z1 = Complex(5,6)
+
+Class is extended to a default builtin class.
+
+def __str__(self):
+    return f'{self.real} + i{self.img}'
+def __repr__(self):
+    return f'Complex({self.real},{self.img})'
+
+str(z1) ≡ z1.__str__()
+repr(z1) ≡ z1.__repr__()

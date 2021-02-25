@@ -1,0 +1,17 @@
+CLASS VARIABLE
+
+class Student:
+    pass_score = 40.0			#class variable
+    def __init__(self,...):
+	#pass
+    #pass
+
+Printing content of class:
+
+print('Content of class:',Student.pass_score)
+
+Printing content of class object:
+
+print(s1.__dict__)			# '__dict__' --> namespace of class
+
+s1.pass_or_fail()

@@ -1,0 +1,13 @@
+THE __INIT__ METHOD
+
+class Student:
+    def __init__(self, roll, first_name, last_name):		#self = reference to current object (default : self). To be called implicitly. All arguments = instance members
+        self.roll = roll
+	self.first_name = first_name
+	self.last_name = last_name
+	self.email = first_name.lower() + "." + last_name.lower() + "@school.domain.com"
+    def name(self):
+	return self.first_name + " " + self.last_name
+    print(s1.name())				#This is same as Student.name(s1)
+
+Init is self-reference.

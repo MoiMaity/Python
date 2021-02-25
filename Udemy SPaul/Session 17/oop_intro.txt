@@ -1,0 +1,24 @@
+OBJECT ORIENTED PROGRAMMING - OBJECTS & CLASSES
+
+Basic Idea
+
+User defined type - keyword 'class'
+2 things in class in general -
+1. attributes : name, roll, email (all nouns)
+2. behaviours : study(), enjoy() (actions/functionality)
+
+class is a blueprint
+Each student is an object of student class - memory allocation
+
+WRITING OWN CLASS
+
+'class' keyword
+
+attributes must be defined in class.
+class Student:
+    #pass
+
+s1 = Student()
+s1.roll = 1
+s1.first_name
+s1.last_name

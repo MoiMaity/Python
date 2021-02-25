@@ -1,0 +1,18 @@
+PART 3
+
+Operator Overloading -- Behaviour of + operator is according to type of objects.
+
+int.__add__(5,15) ≡ 5 + 15			#Dunder add of int
+str.__add__('Hello','World!') ≡ 'Hello,' + 'World!' 		#Dunder add of str
+
+def __add__(self, other):
+    r = self.real + other.real
+    i = self.img + other.img
+    z = Complex(r,i)
+    return z
+
+def __sub__(self, other):
+    r = self.real - other.real
+    i = self.img - other.img
+    z = Complex(r,i)
+    return z
