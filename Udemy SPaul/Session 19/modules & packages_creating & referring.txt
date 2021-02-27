@@ -1,0 +1,12 @@
+CREATING & REFERRING A MODULE FROM A PY SCRIPT
+
+from module_name import * (everything)	or	import class_name
+import module_name		(import whole module)
+
+mymodule.Student()
+
+Name Collision :
+
+2 same class name in 2 different module.
+Student in mymodule1 and mymodule2.
+

@@ -1,0 +1,19 @@
+PYTHON PACKAGE - CONTAINER FROM PYTHON
+
+Criteria - Package must caontain dunder __init__ (__init__.py) file for a folder to turn to package.
+
+Resolving name collisions :
+
+Python searches sequentially from left to right.
+Put modules in Packages.
+__init__.py can be left empty.
+Put location of this package in PYTHONPATH.
+We can append the location of package also.
+
+Syntax :
+from package_name.module_name import Student
+
+Method 2 :
+
+from package_name import module_name
+s = module_name.Student(1, 'John')

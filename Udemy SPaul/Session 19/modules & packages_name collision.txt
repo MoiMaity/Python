@@ -1,0 +1,15 @@
+RESOLVING NAME COLLISIONS - IMPORTANCE OF PACKAGE
+
+Add Pythonpath variable using semicolon.
+Location : C:\p1\work1 ; C:\p2\work2
+
+Content of Environment variable\
+
+echo %PYTHONPATH% in ANACONDA PROMPT
+
+After creating 2 packages, set PYTHONPATH to locations : C:\p1 ; C:\p2
+
+import work1.mymodule
+import work2.mymodule
+work1.mymodule.fun1()
+work2.mymodule.fun2()

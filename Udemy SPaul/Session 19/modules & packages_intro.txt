@@ -1,0 +1,11 @@
+MODULES & PACKAGES
+
+INTRO
+
+We may want to use function/classes from various python script.
+We can put the function/classes in a python module and can refer them from any other python script.
+A module is a python file with .py extension containing function/classses.
+A package is a folder or directory (with 1 condition)
+
+Advantage : helps resolving name collision.
+

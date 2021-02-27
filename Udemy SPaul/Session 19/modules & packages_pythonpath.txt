@@ -1,0 +1,13 @@
+PYTHONPATH - ACCESSING MODULE FROM ANY LOCATION IN FILE SYSTEM
+
+Pythonpath - Environment parameter
+
+search -> edit environment variables -> environment variables -> system variables list
+Create PYTHONPATH -> Variable Name : PYTHONPATH
+Variable value : "Path of Module"
+
+We can add a path using sys package.
+Syntax :
+import sys
+sys.path.append("Path of Module")
+
