@@ -1,0 +1,28 @@
+RETURNING A FUNCTION FROM ANOTHER FUNCTION - CLOSURES
+
+Nested function - inner function within a function.
+
+def formatted_print(funct):
+    def print_msg(name):
+	pass
+	funct()
+    return print_msg
+f = formatted_string(say_hello)
+f('John')
+
+closures - inner function that remembers the value of outer function even after process is over.
+Ex : print_msg()
+
+import datetime as dt
+def formatted_print(funct):
+    hr = dt.datetime.today().hour
+    if 6 <= hr < 12:
+	print_char = '*'
+    elif 12 <= hr <= 20:
+	print_char = '$'
+    else:
+	print_char = '#'
+    def print_msg(--):
+	---(20 * print_char)
+	pass
+pass

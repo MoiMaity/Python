@@ -1,0 +1,61 @@
+CHAINING OF DECORATOR & PARAMETERISED DECORATOR
+
+1. Chaining of Decorators - 
+
+def star_decorator(funct):
+    def do_decoration(*args, **kwargs):
+	pass
+	r = funct(*args, **kwargs)
+	return r
+    return do_decoration
+
+def dollar_decorator(funct):
+    def do_decoration(*args, **kwargs):
+	pass
+	r = funct(*args, **kwargs)
+	return r
+    return do_decoration
+
+@star_decorator			#1st - star 2nd - dollar
+@dollar_decorator		#chaining 
+def say_welcome(...):
+    pass
+
+We can apply more than 1 decorator on a function.
+
+2. PARAMETERISED DECORATORS -
+
+def star_decorator(funct):
+    def do_decoration(*args, **kwargs):
+	pass
+	r = funct(*args, **kwargs)
+	return r
+    return do_decoration
+
+def dollar_decorator(funct):
+    def do_decoration(*args, **kwargs):
+	pass
+	r = funct(*args, **kwargs)
+	return r
+    return do_decoration
+
+def message_decorator(symbol):
+    def print_decorator(funct):
+	def do_decoration(*args, **kwargs):
+	    pass
+	    r = funct(20 * symbol)
+        return do_decoration
+    return print_decorator
+
+@message_decorator('*')
+@message_decorator('$')			#chaining
+def say_welcome(..):
+    pass
+say_welcome('Peter')		#Method 2 - 
+
+pd = message_decorator('$')
+dd = pd(say_welcome)
+dd('Peter')
+
+
+		

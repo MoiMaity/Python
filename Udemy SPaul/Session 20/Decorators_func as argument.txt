@@ -1,0 +1,10 @@
+PASSING FUNCTION AS ARGUMENTS TO ANOTHER FUNCTION
+
+def formatted_print(funct, name):		#funct = any function
+    print(20*'*')
+    funct(name)
+    print(20*'*')
+formatted_print(say_hello,'John')
+formatted_print(say_welcome,'Peter')
+
+formatted_print - higher order function (receiving reference from a function).

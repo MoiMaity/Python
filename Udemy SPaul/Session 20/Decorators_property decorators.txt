@@ -1,0 +1,48 @@
+PROPERTY DECORATORS - CREATING SETTER, GETTER & DELETER
+
+class Student:
+    def __init__(...):
+	pass
+    def name(self):
+	pass
+
+email -> derived attribute
+
+Update the student1 reference to different name, the email will not get updated - anomaly.
+We need to method the 'email'.
+Methods needed to be treated as attributes - Property decorator
+
+@property
+def name(self):
+    pass
+Student1.name
+
+@property
+def email(self):
+    pass
+Student1.email
+
+Previously without Property Decorator :
+
+Student1.name()
+Student1.email()
+
+Getter - get a value to print but cannot update.
+
+Setter Property :
+
+@'name_of_object'.setter
+def name_of_object(self, f_name):		#f_name = value passed in here
+    pass 	self.first_name, self.last_name = f_name.split(' ')
+
+Deleter Property : delete an attribute
+
+@"name".deleter
+def name(self, f_name):
+    self.first_name = None
+    self.last_name = None
+    print('....')
+del Student1.name
+print(Student1.name)
+
+Output: None None

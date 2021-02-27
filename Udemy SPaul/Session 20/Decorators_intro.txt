@@ -1,0 +1,10 @@
+DECORATORS IN PYTHON
+
+INTRO
+
+First Class Function, Higher Order Function and closures.
+
+Everything is considered as object.
+Even functions are also objects of Python.
+Name of function is reference to function object.
+

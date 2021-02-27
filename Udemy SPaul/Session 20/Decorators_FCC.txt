@@ -1,0 +1,39 @@
+FIRST CLASS CITIZEN (FCC)
+
+FCC - An entity wich supports all the operations generally available to other entities.
+
+We can assign a FCC to a variable.
+They can be included in data structures.
+We can pass them as arguments/parameters to any function.
+They can be returned from any function.
+They can be modified.
+
+All inbuilt types are FCC.
+Objects are FCC.
+Functions are also FCC in python.
+
+A function can be assigned to a reference variable.
+A function can be passed as an argument.
+A function can be returned from another function.
+
+In Python, functions are FCC.
+
+Example :
+def say_hello(name):
+    #pass
+def say_welcome(name):
+    #pass
+say_hello('John')
+say_welcome('Peter')
+print(say_hello)
+print(say_welcome)
+
+Output:
+<function....>
+<function....>
+
+f1 = say_hello
+f2 = say_welcome
+
+f1('John')
+f2('Peter') 

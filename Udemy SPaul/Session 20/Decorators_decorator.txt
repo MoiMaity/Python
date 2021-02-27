@@ -1,0 +1,23 @@
+FINALLY IT'S DECORATOR !!!
+
+formatted_print() - A decorator function - recieves a function reference and does a lot more, have inner function and return the function.
+Special Syntax :	
+
+@"name of decorator function"
+def func_name():
+    pass
+
+Example :
+@formatted_print
+def say_hello(name):
+    pass
+say_hello('John')
+
+DECORATING DIFFERENT FUNCTION WITH DIFFERENT ARGUMENTS WITH SAME DECORATOR
+
+Using variable argument passing technique :
+
+def print_msg(*args, **kwargs):
+    pass
+    funct(*args, **kwargs)
+
