@@ -1,0 +1,25 @@
+Popular Python Modules and Packages
+
+1. Pandas
+2. Numpy
+3. Matplotlib
+4. Scikit-learn
+5. Tensorflow
+6. Requests
+7. Beautiful Soup
+8. OpenCV
+9. Pygame
+10. Tkinter
+11. Seaborn
+12. Sys
+13. Urllib
+14. Turtle
+15. Math
+16. Os
+17. Random
+18. Pickle
+19. Scipy
+20. String(str)
+21. Itertools
+22. Statistics
+23. Re(Regex)
