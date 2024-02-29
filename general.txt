@@ -1,0 +1,81 @@
+GENERAL
+
+1. Commenting in Python
+
+Example: 		# This is a comment
+		# This is second comment
+These are single line comments
+
+2. Indentation
+
+Indentation is needed under same code block. 
+Generally  4 white spaces is considered indented.
+
+3. Eval() function
+
+Evaluates an expression. Expression can be any python statement.
+Can also be used with keywords/code objects defined function or variables.
+
+Example: 
+
+eval("9+5")		#output: 14
+type(eval("len"))	#output: <type 'built-in-function-or-method'>
+type("len")		#output: <type 'str'>
+
+4. None keyword
+
+None in Python equivalent to NULL in C
+
+5. KEYWORDS
+
+False
+None
+True
+and
+as
+assert
+break
+class
+if
+def
+del
+elif
+else
+except
+return
+for
+from
+global
+try
+import
+in
+is
+lambda
+while
+not
+or
+pass
+raise
+finally
+continue
+nonlocal
+with
+yield
+
+6. VARIABLES in Python
+
+Variables are case-senstivite in Python 
+
+7. Different methods for Lists and Tuples
+
+l = list()
+dir(l)
+append, count, extend, index, insert, pop, remove, reverse, sort
+
+t = tuple()
+dir(t)
+count, index
+
+8. Py uses 28 bytes for integer in memory.
+
+9. round(var,2) -- #2 = places of decimal
