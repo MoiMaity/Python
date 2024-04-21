@@ -23,3 +23,11 @@ Popular Python Modules and Packages
 21. Itertools
 22. Statistics
 23. Re(Regex)
+
+Python Library for data scientists 
+
+1. Mlflow
+2. Streamlit
+3. Fastapi
+4. Xgboost
+5. Eli5
